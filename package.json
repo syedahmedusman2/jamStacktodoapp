@@ -1,0 +1,11 @@
+{
+  "name": "jamStacktodoapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/syedahmedusman2/jamStacktodoapp.git",
+  "author": "ahmed <ahmedusmanpakistan@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces":[
+    "packages/*"]
+}

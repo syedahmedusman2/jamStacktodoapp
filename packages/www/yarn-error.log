@@ -1,0 +1,46 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\CSC\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby react react-dom
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\CSC\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\CSC\AppData\Local\Programs\Python\Python38-32\;C:\Users\CSC\AppData\Local\Programs\Python\Launcher\;C:\Users\CSC\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\CSC\GitHubDesktop\bin;C:\Users\CSC\AppData\Local\GitHubDesktop\bin;C:\Users\CSC\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\bin;C:\adb;C:\ADB\;D:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\CSC\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\CSC\AppData\Local\Programs\Python\Python38-32\;C:\Users\CSC\AppData\Local\Programs\Python\Launcher\;C:\Users\CSC\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\CSC\GitHubDesktop\bin;C:\Users\CSC\AppData\Local\GitHubDesktop\bin;C:\Users\CSC\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\bin;;C:\Users\CSC\AppData\Local\Microsoft\WindowsApps;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.16.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\CSC\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141289:19)
+      at Object.onceWrapper (events.js:421:28)
+      at ClientRequest.emit (events.js:315:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:709:9)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at TLSSocket.Socket._onTimeout (net.js:481:8)
+      at listOnTimeout (internal/timers.js:549:17)
+      at processTimers (internal/timers.js:492:7)
+
+npm manifest: 
+  {
+    "name": "www",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+  
+    "scripts": {
+      "develop": "gatsby develop",
+      "build": "gatsby build",
+      "clean": "gatsby clean"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
