@@ -1,7 +1,7 @@
 const React = require('react');
 const { ThemeProvider } = require('theme-ui');
 const {light} = require('@theme-ui/presets');
-
+const {provider}= require("./netlifyIdentityContext")
 const newTheme = {
   ...light,
   sizes: { container: 1024 }

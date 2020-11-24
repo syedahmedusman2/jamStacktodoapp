@@ -31,7 +31,7 @@ export default props => {
     Dashboard
   </NavLink>
   {user &&(<NavLink p={2}>
-      {user.user_metdata.full_name}
+      {user.user_metadata.full_name}
   </NavLink>)}
   {/* <NavLink href='#!' p={2}>
     About
