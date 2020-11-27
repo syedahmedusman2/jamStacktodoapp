@@ -2,8 +2,11 @@ const {ApolloServer, gql} = require('apollo-server-lambda');
 
 const typeDefs = gql`
 type Query{
-    hello: String
-} `;
+    todos: [Todo]!
+} 
+type Todo{
+    id: ID!
+}`;
 
 const resolvers = {
     Query:{
