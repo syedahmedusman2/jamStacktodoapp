@@ -3,11 +3,27 @@ import { Input, Container, Heading, Button, Flex, Label, NavLink, Checkbox } fro
 import netlifyIdentity from "netlify-identity-widget";
 import {Link} from 'gatsby';
 
+// const todosReducer = (state,action)=>{
+//   switch(action.type){
+//     case "addTodo":
+//       return [{done:false, action.payload}, ...state]
+//     case "toogleTodoDone":
+//       const newState = [...state];
+//       newState[action.payload]={
+
+//         done:!state[action.payload].done,
+//         value: state[action.payload].value
+//       }  
+//       return newState;
+
+//     }
+// }
+
 export default props => {
     const [user, setUser]=  useState();
     const inputRef= useRef();
+    const [todos, dispatch]= useReducer(todosReducer, [])
 const [todos, setTodos] = useState([])
-// const checkbo= useEffect(false);
     useEffect(()=>{
         netlifyIdentity.init({})
         
@@ -65,9 +81,17 @@ const [todos, setTodos] = useState([])
 
   <Flex sx={{flexDirection:"column"}}>
     <ul>
-      {todos.map(todo=>(
-        <Flex as="li">
-          <Checkbox checked={todo.done}/>
+      {todos.map((todo, i)=>(
+        <Flex as="li" 
+        onClick={()=>{
+          dispatch({
+            type: "toggleTodoDone",
+            payload: i
+          });
+        }}
+        >
+          <Checkbox checked={todo.done} 
+            />
       <span>{todo.value}</span>
       </Flex>
       ))}
